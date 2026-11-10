@@ -94,13 +94,20 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onExploreMethod }) =>
               <div className="absolute -inset-1.5 rounded-[2.5rem] bg-gradient-to-b from-[#D4AF37]/30 via-[#16A34A]/20 to-[#D4AF37]/10 blur-xl opacity-80" />
 
               <div className="relative rounded-[2.5rem] overflow-hidden bg-[#16241D] border border-[#D4AF37]/40 shadow-2xl group">
-                {/* Image Container with smooth aspect ratio */}
-                <div className="relative aspect-[4/5] sm:aspect-[3/4] w-full overflow-hidden">
+                {/* Image Container with guaranteed mobile height */}
+                <div className="relative w-full h-[400px] sm:h-[480px] lg:h-[540px] min-h-[360px] overflow-hidden bg-[#16241D]">
                   <img
                     src={BRAND_INFO.photoClinical}
                     alt="Dra. Luana Lopes — Massoterapeuta Integrativa"
-                    className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700 ease-out"
+                    className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700 ease-out block"
                     loading="eager"
+                    onError={(e) => {
+                      const target = e.currentTarget;
+                      if (!target.dataset.tried) {
+                        target.dataset.tried = 'true';
+                        target.src = './luana-jaleco.jpg';
+                      }
+                    }}
                   />
 
                   {/* Gradient shadow overlay for text legibility */}

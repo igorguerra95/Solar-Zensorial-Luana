@@ -1,4 +1,6 @@
 import { Specialty, MethodPhase, Testimonial, FAQItem, BotanicalRitual, StatMetric } from '../types';
+import photoClinicalImg from '../assets/luana-jaleco.jpg';
+import photoConsultorioImg from '../assets/luana-consultorio.jpg';
 
 // Logo inline em base64 (garante 100% de disponibilidade no GitHub, GitHub Pages e qualquer domínio sem erro 404)
 const LOGO_INLINE_BASE64 =
@@ -24,8 +26,8 @@ export const BRAND_INFO = {
   instagram: '@souluanalopes.raiz',
   instagramUrl: 'https://instagram.com/souluanalopes.raiz',
   logoUrl: LOGO_INLINE_BASE64,
-  photoConsultorio: './luana-consultorio.jpg',
-  photoClinical: './luana-jaleco.jpg',
+  photoClinical: photoClinicalImg,
+  photoConsultorio: photoConsultorioImg,
   tagline: 'Despertando as raízes da saúde através da alquimia entre a sabedoria da natureza e o cuidado sistêmico.',
 };
 
