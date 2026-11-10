@@ -19,6 +19,10 @@ export default defineConfig(() => {
         '@': path.resolve(__dirname, '.'),
       },
     },
+    build: {
+      target: ['es2020', 'safari14', 'ios14'],
+      cssTarget: 'safari14',
+    },
     server: {
       host: '0.0.0.0',
       port: 3000,
