@@ -1,5 +1,6 @@
 import React from 'react';
 import { BRAND_INFO } from '../data/content';
+import { SolarLogo } from './SolarLogo';
 import { Instagram, Mail, Phone, ShieldCheck, Heart, ArrowUp } from 'lucide-react';
 
 export const Footer: React.FC = () => {
@@ -14,13 +15,7 @@ export const Footer: React.FC = () => {
           {/* Col 1: Brand Info & Mission */}
           <div className="lg:col-span-5 space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-12 h-12 rounded-full overflow-hidden border border-[#D4AF37]/50 shadow-md">
-                <img
-                  src={BRAND_INFO.logoUrl}
-                  alt="Solar Zensorial"
-                  className="w-full h-full object-cover"
-                />
-              </div>
+              <SolarLogo size="lg" />
               <div>
                 <span className="font-display font-bold text-xl text-[#FAF7EE] tracking-tight block">
                   Solar Zensorial

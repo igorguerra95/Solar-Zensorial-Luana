@@ -1,5 +1,6 @@
 import React from 'react';
 import { BRAND_INFO, STATS } from '../data/content';
+import { SolarLogo } from './SolarLogo';
 import { ArrowUpRight, Award, Sparkles, Compass, ShieldCheck, HeartHandshake } from 'lucide-react';
 
 interface HeroProps {
@@ -54,13 +55,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onExploreMethod }) =>
 
             {/* Author Attribution Card */}
             <div className="flex items-center gap-3.5 p-3 rounded-2xl bg-[#18261F]/70 border border-[#D4AF37]/20 max-w-xl backdrop-blur-sm">
-              <div className="relative w-12 h-12 rounded-full overflow-hidden border border-[#D4AF37]/50 flex-shrink-0">
-                <img
-                  src={BRAND_INFO.logoUrl}
-                  alt="Luana Lopes"
-                  className="w-full h-full object-cover"
-                />
-              </div>
+              <SolarLogo size="md" />
               <div className="text-xs">
                 <div className="font-semibold text-[#FAF7EE] text-sm">
                   Por {BRAND_INFO.professional}

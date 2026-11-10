@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { BRAND_INFO } from '../data/content';
+import { SolarLogo } from './SolarLogo';
 import { Menu, X, ArrowUpRight, ShieldCheck, Calendar, Phone } from 'lucide-react';
 
 interface NavbarProps {
@@ -52,13 +53,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
               href="#inicio"
               className="flex items-center gap-3 group focus:outline-none focus:ring-2 focus:ring-[#D4AF37]/50 rounded-lg p-1"
             >
-              <div className="relative w-11 h-11 rounded-full overflow-hidden border border-[#D4AF37]/40 shadow-md shadow-[#D4AF37]/10 group-hover:border-[#D4AF37] transition-all">
-                <img
-                  src={BRAND_INFO.logoUrl}
-                  alt="Solar Zensorial Logo"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                />
-              </div>
+              <SolarLogo size="md" className="group-hover:scale-105 transition-transform duration-500" />
               <div className="flex flex-col">
                 <span className="font-display font-bold text-lg sm:text-xl tracking-tight text-[#EFECE6] group-hover:text-[#FFF8E7] transition-colors flex items-center gap-1.5">
                   Solar Zensorial
@@ -134,11 +129,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
             <div>
               <div className="flex items-center justify-between pb-6 border-b border-[#D4AF37]/15">
                 <div className="flex items-center gap-2.5">
-                  <img
-                    src={BRAND_INFO.logoUrl}
-                    alt="Logo"
-                    className="w-9 h-9 rounded-full border border-[#D4AF37]/40"
-                  />
+                  <SolarLogo size="sm" />
                   <div>
                     <div className="font-display font-bold text-sm text-[#EFECE6]">
                       Solar Zensorial

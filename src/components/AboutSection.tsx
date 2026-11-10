@@ -1,5 +1,6 @@
 import React from 'react';
 import { BRAND_INFO } from '../data/content';
+import { SolarLogo } from './SolarLogo';
 import { Award, Compass, ShieldCheck, Sparkles, BookOpen } from 'lucide-react';
 
 export const AboutSection: React.FC = () => {
@@ -29,13 +30,7 @@ export const AboutSection: React.FC = () => {
             <div className="relative rounded-3xl overflow-hidden bg-gradient-to-b from-[#1C2C23] to-[#142019] border border-[#D4AF37]/30 p-8 shadow-2xl">
               {/* Profile Header */}
               <div className="flex items-center gap-4 pb-6 border-b border-[#D4AF37]/20">
-                <div className="relative w-20 h-20 rounded-full overflow-hidden border-2 border-[#D4AF37] shadow-xl flex-shrink-0">
-                  <img
-                    src={BRAND_INFO.logoUrl}
-                    alt="Solar Zensorial Luana Lopes"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
+                <SolarLogo size="xl" />
                 <div>
                   <h3 className="font-display font-bold text-xl sm:text-2xl text-[#FAF7EE]">
                     {BRAND_INFO.professional}
