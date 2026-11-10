@@ -1,0 +1,115 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-display: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+
+  --color-brand-forest: #121B16;
+  --color-brand-moss: #1A2820;
+  --color-brand-card: #1F3027;
+  --color-brand-card-hover: #263C31;
+  --color-brand-surface: #25392F;
+  --color-brand-green: #16A34A;
+  --color-brand-green-light: #22C55E;
+  --color-brand-gold: #D4AF37;
+  --color-brand-gold-light: #F3E5AB;
+  --color-brand-gold-muted: #B89B30;
+  --color-brand-sand: #EFECE6;
+  --color-brand-muted: #9EAEA4;
+  --color-brand-border: rgba(212, 175, 55, 0.15);
+  --color-brand-border-green: rgba(34, 197, 94, 0.2);
+}
+
+:root {
+  --primary: 142 76% 36%;
+  --secondary: 46 65% 52%;
+  --background: 148 20% 9%;
+  --foreground: 45 20% 92%;
+}
+
+@layer base {
+  * {
+    border-color: rgba(212, 175, 55, 0.15);
+  }
+  
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-sans);
+    background-color: #121B16;
+    color: #EFECE6;
+  }
+
+  body {
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-display);
+    letter-spacing: -0.03em;
+  }
+
+  .font-serif-editorial {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Custom premium aesthetic utilities */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #FFF0BE 0%, #D4AF37 50%, #AA820A 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.emerald-gradient-text {
+  background: linear-gradient(135deg, #86EFAC 0%, #22C55E 50%, #15803D 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.glass-card {
+  background: rgba(31, 48, 39, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(212, 175, 55, 0.14);
+}
+
+.glass-card:hover {
+  background: rgba(38, 60, 49, 0.85);
+  border-color: rgba(212, 175, 55, 0.35);
+}
+
+.glass-nav {
+  background: rgba(18, 27, 22, 0.82);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.12);
+}
+
+.noise-subtle {
+  background-image: radial-gradient(rgba(212, 175, 55, 0.05) 1px, transparent 0);
+  background-size: 32px 32px;
+}
+
+/* Subtle glow badges */
+.gold-badge {
+  background: linear-gradient(90deg, rgba(212, 175, 55, 0.12), rgba(22, 163, 74, 0.12));
+  border: 1px solid rgba(212, 175, 55, 0.28);
+}
+
+/* Smooth pulse for WhatsApp floating button */
+@keyframes softPulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.45), 0 10px 25px -5px rgba(0, 0, 0, 0.5);
+  }
+  50% {
+    transform: scale(1.04);
+    box-shadow: 0 0 0 12px rgba(34, 197, 94, 0), 0 14px 30px -5px rgba(0, 0, 0, 0.6);
+  }
+}
+
+.whatsapp-pulse {
+  animation: softPulse 3.2s infinite ease-in-out;
+}

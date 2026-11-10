@@ -1,0 +1,6 @@
+{
+  "name": "Solar Zensorial - Luana Lopes",
+  "description": "Espaço de Massoterapia Integrativa, Fitoterapia e Métodos Alquimia das Raízes por Luana Lopes no Rio de Janeiro.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
