@@ -124,8 +124,14 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
             onClick={() => setMobileMenuOpen(false)}
           />
 
-          {/* Drawer content */}
-          <div className="fixed inset-y-0 right-0 w-full max-w-xs bg-[#15221B] border-l border-[#D4AF37]/20 p-6 flex flex-col justify-between shadow-2xl z-50">
+          {/* Drawer content with safe area support for iPhone notch and home indicator */}
+          <div
+            className="fixed inset-y-0 right-0 w-full max-w-xs bg-[#15221B] border-l border-[#D4AF37]/20 p-6 flex flex-col justify-between shadow-2xl z-50 overflow-y-auto"
+            style={{
+              paddingTop: 'max(1.5rem, calc(1rem + env(safe-area-inset-top, 0px)))',
+              paddingBottom: 'max(1.5rem, calc(1rem + env(safe-area-inset-bottom, 0px)))',
+            }}
+          >
             <div>
               <div className="flex items-center justify-between pb-6 border-b border-[#D4AF37]/15">
                 <div className="flex items-center gap-2.5">

@@ -10,7 +10,13 @@ export const FloatingWhatsApp: React.FC = () => {
   )}`;
 
   return (
-    <div className="fixed bottom-6 right-6 z-50 flex items-end flex-col gap-2">
+    <div
+      className="fixed z-50 flex items-end flex-col gap-2 pointer-events-auto"
+      style={{
+        bottom: 'max(1.5rem, calc(1rem + env(safe-area-inset-bottom, 0px)))',
+        right: 'max(1.25rem, calc(1rem + env(safe-area-inset-right, 0px)))',
+      }}
+    >
       {showTooltip && (
         <div className="hidden sm:flex items-center gap-2 p-3 rounded-2xl bg-[#16231B] border border-[#22C55E]/40 shadow-2xl text-xs text-[#FAF7EE] max-w-xs animate-in fade-in slide-in-from-bottom-2 duration-300">
           <div className="flex-1 leading-snug">

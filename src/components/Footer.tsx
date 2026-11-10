@@ -9,7 +9,10 @@ export const Footer: React.FC = () => {
   };
 
   return (
-    <footer className="bg-[#0A100D] border-t border-[#D4AF37]/20 text-[#A3B5AA] pt-16 pb-12 relative overflow-hidden">
+    <footer
+      className="bg-[#0A100D] border-t border-[#D4AF37]/20 text-[#A3B5AA] pt-16 pb-12 relative overflow-hidden"
+      style={{ paddingBottom: 'max(3rem, calc(2rem + env(safe-area-inset-bottom, 0px)))' }}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-[#D4AF37]/15">
           {/* Col 1: Brand Info & Mission */}

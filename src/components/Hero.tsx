@@ -42,7 +42,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onExploreMethod }) =>
                 Saúde Sistêmica & Microeletrônica Muscular
               </span>
 
-              <h1 className="font-display font-bold tracking-tight text-[#FAF7EE] text-[2.75rem] sm:text-6xl lg:text-[4.25rem] leading-[1.04]">
+              <h1 className="font-display font-bold tracking-tight text-[#FAF7EE] text-[2.25rem] sm:text-5xl lg:text-6xl xl:text-[4.25rem] leading-[1.08] break-words">
                 Alquimia das Raízes: <br />
                 <span className="gold-gradient-text">A Raiz da Sua</span>{' '}
                 <span className="italic font-serif-editorial font-normal font-light">Transformação.</span>

@@ -22,8 +22,8 @@ export const TestimonialsSection: React.FC = () => {
           </p>
         </div>
 
-        {/* Testimonials Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+        {/* Testimonials Grid optimized for mobile, tablet (2 cols) and PC (3 cols) */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-12">
           {TESTIMONIALS.map((t) => (
             <div
               key={t.id}

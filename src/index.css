@@ -38,11 +38,17 @@
     font-family: var(--font-sans);
     background-color: #121B16;
     color: #EFECE6;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
   }
 
   body {
     min-height: 100vh;
+    min-height: 100dvh; /* Dynamic viewport height for iOS Safari & Android Chrome address bar */
     overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   h1, h2, h3, .font-display {
@@ -52,6 +58,18 @@
 
   .font-serif-editorial {
     font-family: var(--font-serif);
+  }
+
+  /* Prevent iPhone iOS Safari from auto-zooming inputs under 16px */
+  @media screen and (max-width: 768px) {
+    input, select, textarea {
+      font-size: 16px !important;
+    }
+  }
+
+  /* Optimize touch responsiveness */
+  button, a, [role="button"], input, select, textarea {
+    touch-action: manipulation;
   }
 }
 
