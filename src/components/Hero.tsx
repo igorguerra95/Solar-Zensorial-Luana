@@ -87,51 +87,67 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onExploreMethod }) =>
             </div>
           </div>
 
-          {/* Right Column: Visual Quote & Organic Frame */}
+          {/* Right Column: Authentic Editorial Photo & Floating Quote */}
           <div className="lg:col-span-5 relative">
             <div className="relative mx-auto max-w-md lg:max-w-none">
-              {/* Decorative aura border */}
-              <div className="absolute -inset-1 rounded-3xl bg-gradient-to-b from-[#D4AF37]/30 via-[#16A34A]/20 to-transparent blur-md opacity-75" />
+              {/* Decorative aura glow */}
+              <div className="absolute -inset-1.5 rounded-[2.5rem] bg-gradient-to-b from-[#D4AF37]/30 via-[#16A34A]/20 to-[#D4AF37]/10 blur-xl opacity-80" />
 
-              <div className="relative rounded-3xl bg-gradient-to-b from-[#1C2C23] to-[#142019] border border-[#D4AF37]/30 p-7 sm:p-9 shadow-2xl space-y-6">
-                <div className="flex items-center justify-between pb-4 border-b border-[#D4AF37]/15">
-                  <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-[#D4AF37]">
-                    <Sparkles className="w-4 h-4 text-[#D4AF37]" />
-                    <span>Destaque Visual & Filosofia</span>
-                  </div>
-                  <div className="text-[11px] text-[#A3B5AA] font-mono">
-                    Rio de Janeiro – RJ
-                  </div>
-                </div>
+              <div className="relative rounded-[2.5rem] overflow-hidden bg-[#16241D] border border-[#D4AF37]/40 shadow-2xl group">
+                {/* Image Container with smooth aspect ratio */}
+                <div className="relative aspect-[4/5] sm:aspect-[3/4] w-full overflow-hidden">
+                  <img
+                    src={BRAND_INFO.photoClinical}
+                    alt="Dra. Luana Lopes — Massoterapeuta Integrativa"
+                    className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700 ease-out"
+                    loading="eager"
+                  />
 
-                {/* The profound quote from the PDF */}
-                <blockquote className="space-y-4">
-                  <p className="font-serif-editorial text-xl sm:text-2xl text-[#FFF9EB] font-light leading-relaxed italic">
-                    "Eu sou a prova viva de que o cuidado cura, de que o amor é o maior legado e de que cada um de nós é plenamente capaz de renascer e florescer com soberania sobre a própria história."
-                  </p>
-                  <footer className="text-right">
-                    <span className="text-xs uppercase tracking-widest text-[#D4AF37] font-semibold block">
-                      — Luana Lopes
-                    </span>
-                    <span className="text-[11px] text-[#A3B5AA]">
-                      Criadora do Método Alquimia das Raízes
-                    </span>
-                  </footer>
-                </blockquote>
+                  {/* Gradient shadow overlay for text legibility */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0E1712] via-[#0E1712]/50 to-transparent" />
 
-                {/* Badges / Micro credentials */}
-                <div className="pt-4 border-t border-[#D4AF37]/15 flex flex-wrap gap-2 text-[11px] text-[#C2D0C7]">
-                  <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-[#16231B] border border-[#D4AF37]/15">
-                    <ShieldCheck className="w-3.5 h-3.5 text-[#22C55E]" />
-                    <span>FENATE/RJ 0080</span>
+                  {/* Top floating pill badge */}
+                  <div className="absolute top-4 left-4 right-4 flex items-center justify-between">
+                    <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#121B16]/85 backdrop-blur-md border border-[#D4AF37]/30 text-[11px] font-semibold text-[#FAF7EE] shadow-lg">
+                      <Sparkles className="w-3.5 h-3.5 text-[#D4AF37]" />
+                      <span>Espaço Zensorial • RJ</span>
+                    </div>
+
+                    <div className="px-2.5 py-1 rounded-full bg-[#16A34A]/80 backdrop-blur-md text-[10px] font-bold text-white uppercase tracking-wider">
+                      Atendimento Presencial
+                    </div>
                   </div>
-                  <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-[#16231B] border border-[#D4AF37]/15">
-                    <ShieldCheck className="w-3.5 h-3.5 text-[#22C55E]" />
-                    <span>ABRANA 100647</span>
-                  </div>
-                  <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-[#16231B] border border-[#D4AF37]/15">
-                    <ShieldCheck className="w-3.5 h-3.5 text-[#22C55E]" />
-                    <span>CRTH-BR 02840/25</span>
+
+                  {/* Bottom Overlaid Quote & Credentials */}
+                  <div className="absolute bottom-0 inset-x-0 p-5 sm:p-7 space-y-3.5">
+                    <blockquote className="space-y-2">
+                      <p className="font-serif-editorial text-base sm:text-lg text-[#FFF9EB] font-light leading-snug italic drop-shadow-md">
+                        "Eu sou a prova viva de que o cuidado cura, de que o amor é o maior legado e de que cada um de nós é plenamente capaz de renascer e florescer com soberania sobre a própria história."
+                      </p>
+                      <footer className="flex items-center justify-between pt-1">
+                        <div>
+                          <span className="text-xs uppercase tracking-wider text-[#D4AF37] font-semibold block">
+                            — Luana Lopes
+                          </span>
+                          <span className="text-[10px] text-[#A3B5AA]">
+                            Criadora do Método Alquimia das Raízes
+                          </span>
+                        </div>
+                      </footer>
+                    </blockquote>
+
+                    {/* Official Registration Pills */}
+                    <div className="flex flex-wrap gap-1.5 pt-1 border-t border-[#D4AF37]/20 text-[10px] text-[#C2D0C7]">
+                      <span className="px-2 py-0.5 rounded bg-[#121B16]/90 border border-[#D4AF37]/20 font-mono">
+                        FENATE/RJ 0080
+                      </span>
+                      <span className="px-2 py-0.5 rounded bg-[#121B16]/90 border border-[#D4AF37]/20 font-mono">
+                        ABRANA 100647
+                      </span>
+                      <span className="px-2 py-0.5 rounded bg-[#121B16]/90 border border-[#D4AF37]/20 font-mono">
+                        CRTH-BR 02840/25
+                      </span>
+                    </div>
                   </div>
                 </div>
               </div>

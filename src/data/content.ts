@@ -24,6 +24,8 @@ export const BRAND_INFO = {
   instagram: '@souluanalopes.raiz',
   instagramUrl: 'https://instagram.com/souluanalopes.raiz',
   logoUrl: LOGO_INLINE_BASE64,
+  photoConsultorio: './luana-consultorio.jpg',
+  photoClinical: './luana-jaleco.jpg',
   tagline: 'Despertando as raízes da saúde através da alquimia entre a sabedoria da natureza e o cuidado sistêmico.',
 };
 

@@ -27,25 +27,36 @@ export const AboutSection: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start mb-16">
           {/* Left Column: Visual Profile & Credentials Card */}
           <div className="lg:col-span-5 space-y-6">
-            <div className="relative rounded-3xl overflow-hidden bg-gradient-to-b from-[#1C2C23] to-[#142019] border border-[#D4AF37]/30 p-8 shadow-2xl">
-              {/* Profile Header */}
-              <div className="flex items-center gap-4 pb-6 border-b border-[#D4AF37]/20">
-                <SolarLogo size="xl" />
-                <div>
-                  <h3 className="font-display font-bold text-xl sm:text-2xl text-[#FAF7EE]">
+            <div className="relative rounded-3xl overflow-hidden bg-gradient-to-b from-[#1C2C23] to-[#142019] border border-[#D4AF37]/30 p-6 sm:p-8 shadow-2xl">
+              {/* Portrait Photo of Dra. Luana no Espaço Zensorial */}
+              <div className="relative rounded-2xl overflow-hidden border border-[#D4AF37]/30 mb-6 group shadow-lg">
+                <div className="aspect-[4/4.5] w-full overflow-hidden bg-[#121B16]">
+                  <img
+                    src={BRAND_INFO.photoConsultorio}
+                    alt="Dra. Luana Lopes no Espaço Zensorial"
+                    className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500 ease-out"
+                    loading="lazy"
+                  />
+                </div>
+                {/* Subtle gradient vignette */}
+                <div className="absolute inset-0 bg-gradient-to-t from-[#121B16] via-transparent to-transparent opacity-80" />
+                
+                {/* Name badge overlaid on bottom of portrait */}
+                <div className="absolute bottom-3 left-3 right-3 p-3 rounded-xl bg-[#142019]/90 backdrop-blur-md border border-[#D4AF37]/25">
+                  <div className="font-display font-bold text-base text-[#FAF7EE]">
                     {BRAND_INFO.professional}
-                  </h3>
-                  <div className="text-xs text-[#D4AF37] font-medium mt-0.5">
+                  </div>
+                  <div className="text-xs text-[#D4AF37] font-medium">
                     {BRAND_INFO.role}
                   </div>
-                  <div className="text-[11px] text-[#A3B5AA] mt-0.5">
-                    {BRAND_INFO.academic}
+                  <div className="text-[11px] text-[#A3B5AA]">
+                    {BRAND_INFO.specialization} • {BRAND_INFO.academic}
                   </div>
                 </div>
               </div>
 
               {/* Award Callout */}
-              <div className="mt-6 p-4 rounded-2xl bg-gradient-to-r from-[#D4AF37]/20 via-[#16A34A]/15 to-[#D4AF37]/10 border border-[#D4AF37]/40 flex items-center gap-3">
+              <div className="p-4 rounded-2xl bg-gradient-to-r from-[#D4AF37]/20 via-[#16A34A]/15 to-[#D4AF37]/10 border border-[#D4AF37]/40 flex items-center gap-3">
                 <div className="p-2.5 rounded-xl bg-[#D4AF37] text-[#121B16] flex-shrink-0">
                   <Award className="w-6 h-6" />
                 </div>
