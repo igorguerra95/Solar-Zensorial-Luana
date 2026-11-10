@@ -56,10 +56,10 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
               <SolarLogo size="md" className="group-hover:scale-105 transition-transform duration-500" />
               <div className="flex flex-col">
                 <span className="font-display font-bold text-lg sm:text-xl tracking-tight text-[#EFECE6] group-hover:text-[#FFF8E7] transition-colors flex items-center gap-1.5">
-                  Solar Zensorial
+                  Luana Lopes
                 </span>
-                <span className="text-[11px] font-medium tracking-wider text-[#A3B5AA] uppercase">
-                  Luana Lopes • Rio de Janeiro
+                <span className="text-[10px] sm:text-[11px] font-medium text-[#A3B5AA] leading-tight">
+                  Massoterapeuta integrativa & especialista em Fitoterapia
                 </span>
               </div>
             </a>
@@ -138,9 +138,11 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
                   <SolarLogo size="sm" />
                   <div>
                     <div className="font-display font-bold text-sm text-[#EFECE6]">
-                      Solar Zensorial
+                      Luana Lopes
                     </div>
-                    <div className="text-[10px] text-[#A3B5AA]">Espaço Terapêutico</div>
+                    <div className="text-[10px] text-[#A3B5AA] leading-tight">
+                      Massoterapeuta integrativa & especialista em Fitoterapia
+                    </div>
                   </div>
                 </div>
                 <button

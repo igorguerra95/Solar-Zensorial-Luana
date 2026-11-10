@@ -20,8 +20,8 @@ export const BRAND_INFO = {
   awards: '4º Lugar no Campeonato Internacional de Massoterapia (2026)',
   location: 'Rio de Janeiro – RJ (Espaço Zensorial)',
   locationCity: 'Rio de Janeiro, RJ',
-  phoneDisplay: '(21) 98447-0911',
-  phoneRaw: '5521984470911',
+  phoneDisplay: '(21) 97945-2733',
+  phoneRaw: '5521979452733',
   email: 'terapiasmulticarerj@gmail.com',
   instagram: '@souluanalopes.raiz',
   instagramUrl: 'https://instagram.com/souluanalopes.raiz',
@@ -258,7 +258,7 @@ export const FAQS: FAQItem[] = [
     category: 'atendimento',
     question: 'Como são realizados os agendamentos e onde acontecem os atendimentos?',
     answer:
-      'Os atendimentos são presenciais, exclusivamente com hora marcada, em um ambiente preparado no Rio de Janeiro – RJ (Espaço Zensorial). Agendamentos e dúvidas são feitos diretamente pelo WhatsApp (21) 98447-0911.',
+      'Os atendimentos são presenciais, exclusivamente com hora marcada, em um ambiente preparado no Rio de Janeiro – RJ (Espaço Zensorial). Agendamentos e dúvidas são feitos diretamente pelo WhatsApp comercial (21) 97945-2733.',
   },
 ];
 
