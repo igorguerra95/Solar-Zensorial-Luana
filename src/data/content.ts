@@ -73,7 +73,6 @@ export const SPECIALTIES: Specialty[] = [
       'Desativação de pontos-gatilho e liberação miofascial',
       'Regulação do sistema nervoso simpático (redução do cortisol)',
       'Aumento da oxigenação tecidual e amplitude articular',
-      'Apenas sinergia botânica',
     ],
     duration: 'Sessões de 60 a 90 min',
     iconName: 'Sparkles',
@@ -273,7 +272,7 @@ export const SYMPTOM_FINDER = [
   },
   {
     id: 'fadiga-retencao',
-    title: 'Retenção & Cansaço Pesado',
+    title: 'Retenção & Cansaço',
     icon: 'Droplets',
     recommendedService: 'detox-vitalidade',
     desc: 'Pernas cansadas, retenção de líquidos e falta de disposição.',

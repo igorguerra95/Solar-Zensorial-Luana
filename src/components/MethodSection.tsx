@@ -108,7 +108,7 @@ export const MethodSection: React.FC = () => {
                 A preparação do sistema nervoso antes do toque manual
               </h3>
               <p className="text-sm text-[#A3B5AA] leading-relaxed">
-                A pele e o olfato atuam diretamente sobre o sistema nervoso autônomo. Cada elemento botânico presente no Espaço Zensorial foi escolhido para dissolver a hipervigilância diária e abrir caminho para a liberação muscular profunda.
+                A pele e o olfato atuam diretamente sobre o sistema nervoso autônomo. Cada elemento botânico presente no Espaço Zensorial foi escolhido para dissolver o estresse e a agitação mental diária e abrir caminho para a liberação muscular profunda.
               </p>
             </div>
 
