@@ -88,8 +88,8 @@ export const Specialties: React.FC<SpecialtiesProps> = ({ onSelectService }) => 
           </div>
         </div>
 
-        {/* Cards Grid for the 3 Official Treatments */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        {/* Cards Grid for the Official Treatments */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {SPECIALTIES.map((service) => {
             const isHighlighted = highlightedServiceId === service.id;
 

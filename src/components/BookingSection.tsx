@@ -109,7 +109,7 @@ export const BookingSection: React.FC<BookingSectionProps> = ({ preselectedServi
                     {currentServiceObj.duration}
                   </span>
                 </label>
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
                   {SPECIALTIES.map((s) => (
                     <button
                       type="button"
@@ -276,7 +276,7 @@ export const BookingSection: React.FC<BookingSectionProps> = ({ preselectedServi
                   Espaço Zensorial
                 </h3>
                 <p className="text-xs text-[#A3B5AA] leading-relaxed">
-                  Ambiente harmonizado no Rio de Janeiro preparado para desacelerar o ritmo e acolher o seu bem-estar com total privacidade.
+                  Ambiente harmonizado no Rio de Janeiro preparado para desacelerar o ritmo e acolher o seu bem-estar com total discrição e acolhimento exclusivo.
                 </p>
               </div>
 

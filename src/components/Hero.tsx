@@ -129,7 +129,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onExploreMethod }) =>
                   <div className="absolute bottom-0 inset-x-0 p-5 sm:p-7 space-y-3.5">
                     <blockquote className="space-y-2">
                       <p className="font-serif-editorial text-base sm:text-lg text-[#FFF9EB] font-light leading-snug italic drop-shadow-md">
-                        "Eu sou a prova viva de que o cuidado cura, de que o amor é o maior legado e de que cada um de nós é plenamente capaz de renascer e florescer com soberania sobre a própria história."
+                        "Eu sou a prova viva de que o cuidado cura, de que o amor é o maior legado e de que cada um de nós é plenamente capaz de renascer e florescer com qualidade de vida sobre a própria história."
                       </p>
                       <footer className="flex items-center justify-between pt-1">
                         <div>

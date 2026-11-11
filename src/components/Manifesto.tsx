@@ -37,7 +37,7 @@ export const Manifesto: React.FC = () => {
 
             <p className="p-6 rounded-2xl bg-[#15221B] border-l-2 border-[#22C55E] shadow-lg">
               <strong className="text-[#FAF7EE] font-semibold block mb-2 font-display">
-                Autonomia e soberania corporal
+                Autonomia e qualidade de vida corporal
               </strong>
               Não busco apenas silenciar o desconforto, mas cultivar a sua autonomia para que você volte a habitar o seu próprio corpo com presença, vitalidade e clareza.
             </p>
@@ -94,7 +94,7 @@ export const Manifesto: React.FC = () => {
                       O Despertar: A Seiva que Volta a Fluir
                     </h4>
                     <p className="text-xs text-[#A3B5AA] mt-1 leading-relaxed">
-                      O milagre silencioso em que o organismo lembra quem é e volta a sugar a seiva vital. Não é um milagre externo, mas o seu próprio corpo desatando nós do passado e florescendo com soberania.
+                      O milagre silencioso em que o organismo lembra quem é e volta a sugar a seiva vital. Não é um milagre externo, mas o seu próprio corpo desatando nós do passado e florescendo com qualidade de vida.
                     </p>
                   </div>
                 </div>

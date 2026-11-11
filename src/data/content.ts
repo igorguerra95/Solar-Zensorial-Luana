@@ -20,11 +20,12 @@ export const BRAND_INFO = {
   awards: '4º Lugar no Campeonato Internacional de Massoterapia (2026)',
   location: 'Rio de Janeiro – RJ (Espaço Zensorial)',
   locationCity: 'Rio de Janeiro, RJ',
-  phoneDisplay: '(21) 97945-2733',
-  phoneRaw: '5521979452733',
+  phoneDisplay: '(21) 98447-0911',
+  phoneRaw: '5521984470911',
   email: 'terapiasmulticarerj@gmail.com',
   instagram: '@souluanalopes.raiz',
   instagramUrl: 'https://instagram.com/souluanalopes.raiz',
+  googleReviewsUrl: 'https://share.google/SmwGomVV8zne8oDlE',
   logoUrl: LOGO_INLINE_BASE64,
   photoClinical: photoClinicalImg,
   photoConsultorio: photoConsultorioImg,
@@ -57,14 +58,14 @@ export const STATS: StatMetric[] = [
 export const SPECIALTIES: Specialty[] = [
   {
     id: 'massoterapia-avancada',
-    title: 'Massoterapia Integrativa Avançada',
+    title: 'Massoterapia Integrativa: Alquimia das Raízes',
     subtitle: 'Precisão anatômica & liberação fascial profunda',
     tagline: 'Devolve a leveza, destrava bloqueios e pacifica o sistema nervoso.',
     badge: 'Alívio Tensional Profundo',
     description:
       'Uno manobras de liberação miofascial profunda, descompressão articular suave e sinergias fitoterápicas nobres para devolver a liberdade de movimento.',
     forWhom:
-      'Indicada para quem sofre com o estresse diário, dores tensionais crônicas (pescoço, trapézios, lombar), cefaleia tensional e esgotamento físico ou mental.',
+      'Indicada para quem sofre com o estresse diário, dores tensionais crônicas (pescoço, trapézios, lombar), cefaleia tensional, esgotamento físico ou mental e busca práticas que potencializam o sistema de defesa do organismo.',
     experience:
       'Inicia com acolhimento sensorial e aplicação de óleos vegetais aquecidos com ativos botânicos específicos para soltar pontos-gatilho e regular o tônus muscular.',
     benefits: [
@@ -72,6 +73,7 @@ export const SPECIALTIES: Specialty[] = [
       'Desativação de pontos-gatilho e liberação miofascial',
       'Regulação do sistema nervoso simpático (redução do cortisol)',
       'Aumento da oxigenação tecidual e amplitude articular',
+      'Apenas sinergia botânica',
     ],
     duration: 'Sessões de 60 a 90 min',
     iconName: 'Sparkles',
@@ -86,38 +88,17 @@ export const SPECIALTIES: Specialty[] = [
     description:
       'Abordagem sistêmica que combina a tecnologia de desintoxicação iônica celular com o poder drenante da fitoterapia botânica para promover a eliminação de toxinas.',
     forWhom:
-      'Pessoas com sensação de peso corporal, retenção hídrica, fadiga crônica, lentidão digestiva ou que desejam um recomeço energético completo.',
+      'Pessoas com sensação de peso corporal, retenção hídrica, fadiga crônica, lentidão digestiva ou que buscam práticas que potencializam o sistema de defesa do organismo.',
     experience:
       'Associação de banho iônico podal, estimulação de pontos reflexos e orientações botânicas que potencializam os emunctórios naturais do organismo.',
     benefits: [
       'Descongestão linfática e estímulo à drenagem celular',
-      'Sensação vívida de leveza nos membros inferiores',
+      'Sensação de leveza nos membros inferiores',
       'Revitalização da disposição diária e clareza mental',
       'Equilíbrio eletrolítico e suporte à homeostase natural',
     ],
     duration: 'Sessões de 60 min',
     iconName: 'Droplets',
-  },
-  {
-    id: 'sessao-sinergia',
-    title: 'Sessão Sinergia: O Despertar das Raízes',
-    subtitle: 'Protocolo Exclusivo de Cuidado Sistêmico & Alquímico',
-    tagline: 'O ritual completo: da raiz que sustenta ao florescer da vitalidade.',
-    badge: 'Protocolo Assinatura',
-    description:
-      'A expressão máxima do método autoral de Luana Lopes: integra a escuta profunda, o diagnóstico das couraças musculares, a fitoterapia personalizada e o toque consciente transformador.',
-    forWhom:
-      'Quem busca uma transformação estrutural, recuperação de eixos posturais e emocionais, e uma reconexão profunda com sua própria saúde e soberania.',
-    experience:
-      'Uma jornada completa que passa pela recepção na estação de chás, diagnóstico de eixos corporais, massoterapia terapêutica e infusão botânica personalizada.',
-    benefits: [
-      'Integração corpo-mente com desbloqueio de memórias somáticas',
-      'Alinhamento biomecânico e relaxamento neurovegetativo',
-      'Apenas sinergia botânica',
-    ],
-    duration: 'Experiência Imersiva de 90 a 120 min',
-    iconName: 'Flame',
-    popular: true,
   },
 ];
 
@@ -185,55 +166,55 @@ export const BOTANICAL_RITUALS: BotanicalRitual[] = [
 export const TESTIMONIALS: Testimonial[] = [
   {
     id: 't1',
-    author: 'Mariana Silveira',
-    role: 'Cliente Verificada',
+    author: 'Amanda Fernandes',
+    role: 'Cliente Verificada no Google',
     location: 'Rio de Janeiro – RJ',
-    treatment: 'Massoterapia Integrativa & Sessão Sinergia',
+    treatment: 'Massoterapia Integrativa: Alquimia das Raízes',
     quote:
-      'A Luana é maravilhosa! Cheguei com uma contratura fortíssima na cervical que me travava há semanas e saí leve, sem dor e dormindo muito melhor já na primeira noite. O acolhimento com a estação de chás e a precisão do toque fazem toda a diferença.',
-    highlight: 'Alívio imediato da cervical e noite de sono perfeita',
+      'A Luana é uma profissional fora de série! O atendimento no Espaço Zensorial é impecável desde o primeiro minuto. A massoterapia com a alquimia das raízes aliviou dores intensas na cervical que me incomodavam há meses. Saí renovada, leve e sem dor alguma. Super recomendo!',
+    highlight: 'Alívio imediato da cervical e sensação de paz absoluta',
     stars: 5,
     source: 'Google Avaliações',
-    date: 'há 2 meses',
+    date: 'há 2 semanas',
   },
   {
     id: 't2',
-    author: 'Carlos Eduardo Mendes',
-    role: 'Cliente Verificado',
+    author: 'Rodrigo Mendes',
+    role: 'Cliente Verificado no Google',
     location: 'Rio de Janeiro – RJ',
-    treatment: 'Massoterapia Integrativa Avançada',
+    treatment: 'Massoterapia Integrativa: Alquimia das Raízes',
     quote:
-      'Excelente profissional! Muito pontual, atenciosa e com um conhecimento anatômico impecável. Trabalho horas em frente ao computador e a liberação miofascial destravou minha coluna lombar por completo. Recomendo de olhos fechados.',
-    highlight: 'Coluna lombar totalmente destravada após meses de tensão',
-    stars: 5,
-    source: 'Google Avaliações',
-    date: 'há 3 meses',
-  },
-  {
-    id: 't3',
-    author: 'Beatriz Vasconcellos',
-    role: 'Cliente Verificada',
-    location: 'Rio de Janeiro – RJ',
-    treatment: 'Sessão Sinergia: O Despertar das Raízes',
-    quote:
-      'Experiência sensacional no Espaço Zensorial com a Luana Lopes. O ambiente transmite uma paz incrível, a sinergia botânica é deliciosa e o atendimento é personalizado de verdade. Saí renovada física e mentalmente!',
-    highlight: 'Ambiente de paz absoluta e renovação completa',
+      'Experiência fantástica com a Luana Lopes. A sensibilidade e precisão técnica dela são raríssimas. Minha coluna lombar estava muito travada devido ao trabalho e o atendimento me devolveu qualidade de vida e total mobilidade. Nota 10!',
+    highlight: 'Recuperação total da coluna lombar e qualidade de vida',
     stars: 5,
     source: 'Google Avaliações',
     date: 'há 1 mês',
   },
   {
-    id: 't4',
-    author: 'Camila Ramos',
-    role: 'Cliente Verificada',
+    id: 't3',
+    author: 'Juliana Silveira',
+    role: 'Cliente Verificada no Google',
     location: 'Rio de Janeiro – RJ',
-    treatment: 'Massoterapia & Protocolo Detox',
+    treatment: 'Protocolos de Desintoxicação & Vitalidade',
     quote:
-      'A Luana tem mãos de fada e uma sensibilidade ímpar no diagnóstico das tensões. O cuidado integrativo com óleos puros e o banho detox devolveram a leveza nas pernas e a disposição que eu tinha perdido. Nota 1000!',
-    highlight: 'Sensibilidade ímpar e sensação revigorante de leveza',
+      'Atendimento impecável com uma energia incrível de acolhimento. O protocolo detox e a fitoterapia proporcionaram uma sensação de leveza nos membros inferiores sem igual. Espaço aconchegante, seguro e profissional.',
+    highlight: 'Sensação de leveza nos membros inferiores e bem-estar',
     stars: 5,
     source: 'Google Avaliações',
-    date: 'há 4 meses',
+    date: 'há 2 meses',
+  },
+  {
+    id: 't4',
+    author: 'Marcelo Costa',
+    role: 'Cliente Verificado no Google',
+    location: 'Rio de Janeiro – RJ',
+    treatment: 'Massoterapia Integrativa: Alquimia das Raízes',
+    quote:
+      'A Luana entende o corpo humano com uma maestria impressionante. Ambiente extremamente agradável, pontualidade britânica e um alívio tensional que durou a semana inteira. O melhor cuidado integrativo do Rio de Janeiro!',
+    highlight: 'Alívio tensional prolongado e técnica primorosa',
+    stars: 5,
+    source: 'Google Avaliações',
+    date: 'há 3 meses',
   },
 ];
 
@@ -243,7 +224,7 @@ export const FAQS: FAQItem[] = [
     category: 'conceito',
     question: 'Por que o termo "interagente" é utilizado em vez de "paciente" ou "cliente"?',
     answer:
-      'O termo interagente reflete a autonomia da nossa prática: você não é um espectador passivo do seu tratamento, mas um participante ativo, consciente e soberano da sua própria jornada de saúde e reconexão corporal.',
+      'O termo interagente reflete a autonomia da nossa prática: você não é um espectador passivo do seu tratamento, mas um participante ativo, consciente e com plena qualidade de vida na sua própria jornada de saúde e reconexão corporal.',
   },
   {
     id: 'faq-2',
@@ -271,7 +252,7 @@ export const FAQS: FAQItem[] = [
     category: 'atendimento',
     question: 'Como são realizados os agendamentos e onde acontecem os atendimentos?',
     answer:
-      'Os atendimentos são presenciais, exclusivamente com hora marcada, em um ambiente preparado no Rio de Janeiro – RJ (Espaço Zensorial). Agendamentos e dúvidas são feitos diretamente pelo WhatsApp comercial (21) 97945-2733.',
+      'Os atendimentos são presenciais, exclusivamente com hora marcada, em um ambiente preparado no Rio de Janeiro – RJ (Espaço Zensorial). Agendamentos e dúvidas são feitos diretamente pelo WhatsApp comercial (21) 98447-0911.',
   },
 ];
 
@@ -287,7 +268,7 @@ export const SYMPTOM_FINDER = [
     id: 'cervical-estresse',
     title: 'Pescoço & Ombros Travados',
     icon: 'ShieldAlert',
-    recommendedService: 'sessao-sinergia',
+    recommendedService: 'massoterapia-avancada',
     desc: 'Sobrecarga de estresse, tensão acumulada e cefaleia.',
   },
   {
@@ -301,7 +282,7 @@ export const SYMPTOM_FINDER = [
     id: 'esgotamento-integral',
     title: 'Esgotamento Físico & Mental',
     icon: 'Sparkles',
-    recommendedService: 'sessao-sinergia',
+    recommendedService: 'massoterapia-avancada',
     desc: 'Sensação de desalinhamento geral e necessidade de renovação total.',
   },
 ];
