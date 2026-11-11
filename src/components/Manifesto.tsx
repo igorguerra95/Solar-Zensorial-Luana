@@ -15,7 +15,7 @@ export const Manifesto: React.FC = () => {
             <span>O Manifesto</span>
           </div>
           <h2 className="font-display font-bold text-3xl sm:text-4xl lg:text-5xl text-[#FAF7EE] tracking-tight">
-            O corpo não carrega apenas tensões físicas; <br />
+            O corpo não carrega apenas tensões físicas, <br />
             <span className="italic font-serif-editorial text-[#D4AF37] font-normal">
               ele guarda histórias, vivências e memórias.
             </span>
@@ -32,14 +32,14 @@ export const Manifesto: React.FC = () => {
               <strong className="text-[#FAF7EE] font-semibold block mb-2 font-display">
                 A ponte entre o toque e os recursos botânicos
               </strong>
-              A massoterapia integrativa é a ponte entre a sensibilidade do toque e a força dos recursos naturais. Aqui, cada atendimento é pensado como um ritual individualizado de saúde: unimos a precisão da anatomia ao cuidado botânico da fitoterapia e à delicadeza da recepção sensorial.
+              A massoterapia integrativa é a ponte entre a sensibilidade do toque e a força dos recursos naturais. Aqui, cada atendimento é pensado como um ritual individualizado de saúde: uno a precisão da anatomia ao cuidado botânico da fitoterapia e à delicadeza da recepção sensorial.
             </p>
 
             <p className="p-6 rounded-2xl bg-[#15221B] border-l-2 border-[#22C55E] shadow-lg">
               <strong className="text-[#FAF7EE] font-semibold block mb-2 font-display">
                 Autonomia e soberania corporal
               </strong>
-              Não buscamos apenas silenciar o desconforto, mas cultivar a sua autonomia para que você volte a habitar o seu próprio corpo com presença, vitalidade e clareza.
+              Não busco apenas silenciar o desconforto, mas cultivar a sua autonomia para que você volte a habitar o seu próprio corpo com presença, vitalidade e clareza.
             </p>
           </div>
 

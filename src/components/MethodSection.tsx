@@ -35,7 +35,7 @@ export const MethodSection: React.FC = () => {
           </h2>
 
           <p className="text-base sm:text-lg text-[#A3B5AA] leading-relaxed">
-            Compreendemos que a tensão física, o esgotamento mental e os desequilíbrios metabólicos estão interligados. Nosso atendimento segue uma trilha sensorial e biomecânica em 3 etapas consagradas.
+            Compreendo que a tensão física, o esgotamento mental e os desequilíbrios metabólicos estão interligados. Meu atendimento segue uma trilha sensorial e biomecânica em 3 etapas consagradas.
           </p>
         </div>
 
@@ -48,43 +48,49 @@ export const MethodSection: React.FC = () => {
               <div
                 key={phase.step}
                 onClick={() => setSelectedPhase(phase.step)}
-                className={`p-7 rounded-3xl border transition-all duration-300 cursor-pointer relative ${
+                className={`p-7 rounded-3xl border transition-all duration-300 cursor-pointer relative flex flex-col justify-between ${
                   isActive
                     ? 'bg-[#1C2C23] border-[#D4AF37] shadow-xl shadow-[#D4AF37]/10 -translate-y-1'
                     : 'bg-[#142019] border-[#D4AF37]/15 hover:border-[#D4AF37]/40 hover:bg-[#18261F]'
                 }`}
               >
-                {/* Step indicator */}
-                <div className="flex items-center justify-between mb-5">
-                  <div className="w-10 h-10 rounded-xl bg-[#121B16] border border-[#D4AF37]/25 flex items-center justify-center font-display font-bold text-sm text-[#D4AF37]">
-                    0{phase.step}
-                  </div>
-                  <div className="p-2 rounded-lg bg-[#121B16] border border-[#D4AF37]/20">
-                    {getPhaseIcon(phase.iconName)}
-                  </div>
-                </div>
-
-                <div className="space-y-2 mb-4">
-                  <h3 className="font-display font-bold text-xl text-[#FAF7EE]">
-                    {phase.title}
-                  </h3>
-                  <div className="text-xs uppercase tracking-wider text-[#D4AF37] font-medium">
-                    {phase.subtitle}
-                  </div>
-                </div>
-
-                <p className="text-xs sm:text-sm text-[#A3B5AA] leading-relaxed mb-6 font-light">
-                  {phase.description}
-                </p>
-
-                <div className="space-y-2 pt-4 border-t border-[#D4AF37]/15">
-                  {phase.details.map((detail, idx) => (
-                    <div key={idx} className="flex items-center gap-2 text-xs text-[#C2D0C7]">
-                      <CheckCircle2 className="w-3.5 h-3.5 text-[#22C55E] flex-shrink-0" />
-                      <span>{detail}</span>
+                <div>
+                  {/* Step indicator */}
+                  <div className="flex items-center justify-between mb-5">
+                    <div className="w-10 h-10 rounded-xl bg-[#121B16] border border-[#D4AF37]/25 flex items-center justify-center font-display font-bold text-sm text-[#D4AF37]">
+                      0{phase.step}
                     </div>
-                  ))}
+                    <div className="p-2 rounded-lg bg-[#121B16] border border-[#D4AF37]/20">
+                      {getPhaseIcon(phase.iconName)}
+                    </div>
+                  </div>
+
+                  <div className="space-y-2 mb-4">
+                    <h3 className="font-display font-bold text-xl text-[#FAF7EE]">
+                      {phase.title}
+                    </h3>
+                    {phase.subtitle && (
+                      <div className="text-xs uppercase tracking-wider text-[#D4AF37] font-medium">
+                        {phase.subtitle}
+                      </div>
+                    )}
+                  </div>
+
+                  <p className="text-xs sm:text-sm text-[#A3B5AA] leading-relaxed mb-6 font-light">
+                    {phase.description}
+                  </p>
                 </div>
+
+                {phase.details && phase.details.length > 0 && (
+                  <div className="space-y-2 pt-4 border-t border-[#D4AF37]/15">
+                    {phase.details.map((detail, idx) => (
+                      <div key={idx} className="flex items-center gap-2 text-xs text-[#C2D0C7]">
+                        <CheckCircle2 className="w-3.5 h-3.5 text-[#22C55E] flex-shrink-0" />
+                        <span>{detail}</span>
+                      </div>
+                    ))}
+                  </div>
+                )}
               </div>
             );
           })}

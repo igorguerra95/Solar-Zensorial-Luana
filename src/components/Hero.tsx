@@ -39,7 +39,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onExploreMethod }) =>
           <div className="lg:col-span-7 space-y-6 sm:space-y-8">
             <div className="space-y-4">
               <span className="text-xs sm:text-sm font-semibold tracking-[0.25em] uppercase text-[#D4AF37] block">
-                Saúde Sistêmica & Microeletrônica Muscular
+                Saúde Sistêmica & Cuidado Integrativo
               </span>
 
               <h1 className="font-display font-bold tracking-tight text-[#FAF7EE] text-[2.25rem] sm:text-5xl lg:text-6xl xl:text-[4.25rem] leading-[1.08] break-words">
@@ -50,7 +50,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onExploreMethod }) =>
             </div>
 
             <p className="text-base sm:text-lg lg:text-xl text-[#C2D0C7] font-light leading-relaxed max-w-2xl">
-              Despertando as raízes da saúde através da alquimia entre a sabedoria da natureza e o cuidado sistêmico. Unimos a precisão da anatomia ao cuidado botânico da fitoterapia e à delicadeza da recepção sensorial.
+              Despertando as raízes da saúde através da alquimia entre a sabedoria da natureza e o cuidado sistêmico. Uno a precisão da anatomia ao cuidado botânico da fitoterapia e à delicadeza da recepção sensorial.
             </p>
 
             {/* Author Attribution Card */}

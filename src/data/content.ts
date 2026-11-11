@@ -62,7 +62,7 @@ export const SPECIALTIES: Specialty[] = [
     tagline: 'Devolve a leveza, destrava bloqueios e pacifica o sistema nervoso.',
     badge: 'Alívio Tensional Profundo',
     description:
-      'União minuciosa entre manobras de liberação miofascial profunda, descompressão articular suave e sinergias fitoterápicas nobres para devolver a liberdade de movimento.',
+      'Uno manobras de liberação miofascial profunda, descompressão articular suave e sinergias fitoterápicas nobres para devolver a liberdade de movimento.',
     forWhom:
       'Indicada para quem sofre com o estresse diário, dores tensionais crônicas (pescoço, trapézios, lombar), cefaleia tensional e esgotamento físico ou mental.',
     experience:
@@ -113,8 +113,7 @@ export const SPECIALTIES: Specialty[] = [
     benefits: [
       'Integração corpo-mente com desbloqueio de memórias somáticas',
       'Alinhamento biomecânico e relaxamento neurovegetativo',
-      'Sinergia botânica exclusiva preparada para o seu biotipo',
-      'Restauração duradoura da autonomia e da vitalidade vital',
+      'Apenas sinergia botânica',
     ],
     duration: 'Experiência Imersiva de 90 a 120 min',
     iconName: 'Flame',
@@ -126,9 +125,8 @@ export const METHOD_PHASES: MethodPhase[] = [
   {
     step: 1,
     title: 'A Escuta Inicial',
-    subtitle: 'Horizontalidade & Diagnóstico Sensível',
     description:
-      'Acolhimento humanizado onde você não é tratado como mero paciente passivo, mas como interagente consciente da própria história. Mapeamos queixas físicas, rotina, sobrecargas emocionais e estado metabólico.',
+      'Acolhimento humanizado onde você é acolhido como interagente consciente da própria história. Mapeio queixas e o organismo de forma integral.',
     details: [
       'Análise biomecânica e palpatória sutil',
       'Compreensão do histórico de dores e estresse',
@@ -141,7 +139,7 @@ export const METHOD_PHASES: MethodPhase[] = [
     title: 'O Ritual Sensorial',
     subtitle: 'Estação Botânica & Acolhimento Neurovegetativo',
     description:
-      'Antes de qualquer toque na maca, desaceleramos o sistema nervoso central. Nossa estação de chás botânicos com capim-limão, hortelã e infusões ativas prepara o organismo para receber o tratamento.',
+      'Antes de qualquer toque na maca, desacelero o sistema nervoso central. Nossa estação de chás botânicos e infusões ativas prepara o organismo para receber o tratamento.',
     details: [
       'Degustação de infusões botânicas terapêuticas',
       'Aromas vivos com ramos frescos de eucalipto',
@@ -155,11 +153,7 @@ export const METHOD_PHASES: MethodPhase[] = [
     subtitle: 'Precisão Anatômica & Alquimia Manual',
     description:
       'Aplicação de técnicas manuais de alta precisão combinadas a sinergias fitoterápicas e óleos vegetais nobres. O toque consciente atua nas camadas profundas para desatar nós e restabelecer o fluxo vital.',
-    details: [
-      'Liberação fascial e descompressão de nódulos',
-      'Aplicação de óleos puros com sinergias medicinais',
-      'Reorientação postural e sensação profunda de paz',
-    ],
+    details: [],
     iconName: 'Leaf',
   },
 ];
@@ -173,11 +167,11 @@ export const BOTANICAL_RITUALS: BotanicalRitual[] = [
     sensoryNote: 'Notas balsâmicas e refrescantes que induzem à presença no presente.',
   },
   {
-    id: 'cha-capim-limao',
+    id: 'cha-botanico',
     title: 'Estação de Boas-Vindas Botânica',
-    botanicalElement: 'Capim-limão, hortelã e sementes medicinais',
+    botanicalElement: 'Infusões fitoterápicas e sementes medicinais',
     purpose: 'Preparo metabólico e sedação suave do sistema nervoso autônomo.',
-    sensoryNote: 'Sabor cítrico delicado com calor acolhedor que relaxa a musculatura visceral.',
+    sensoryNote: 'Aroma delicado com calor acolhedor que relaxa a musculatura e acalma os sentidos.',
   },
   {
     id: 'oleos-sinergicos',
@@ -192,35 +186,54 @@ export const TESTIMONIALS: Testimonial[] = [
   {
     id: 't1',
     author: 'Mariana Silveira',
-    role: 'Arquiteta',
-    location: 'Rio de Janeiro',
-    treatment: 'Sessão Sinergia: O Despertar das Raízes',
+    role: 'Cliente Verificada',
+    location: 'Rio de Janeiro – RJ',
+    treatment: 'Massoterapia Integrativa & Sessão Sinergia',
     quote:
-      'Cheguei com uma contratura na cervical que me acompanhava há quase dois anos e bloqueava meus dias de trabalho. O atendimento da Luana vai muito além de uma massagem tradicional: a escuta, o chá inicial e a precisão do toque me devolveram uma leveza que eu nem lembrava existir.',
-    highlight: 'Livre de dores crônicas na cervical após duas sessões',
+      'A Luana é maravilhosa! Cheguei com uma contratura fortíssima na cervical que me travava há semanas e saí leve, sem dor e dormindo muito melhor já na primeira noite. O acolhimento com a estação de chás e a precisão do toque fazem toda a diferença.',
+    highlight: 'Alívio imediato da cervical e noite de sono perfeita',
     stars: 5,
+    source: 'Google Avaliações',
+    date: 'há 2 meses',
   },
   {
     id: 't2',
     author: 'Carlos Eduardo Mendes',
-    role: 'Engenheiro de Software',
-    location: 'Rio de Janeiro',
+    role: 'Cliente Verificado',
+    location: 'Rio de Janeiro – RJ',
     treatment: 'Massoterapia Integrativa Avançada',
     quote:
-      'Passo 10 horas sentado em frente à tela e vivia com dores lancinantes na lombar e ansiedade nas alturas. A técnica de liberação e os óleos fitoterápicos mudaram minha postura e até a qualidade do meu sono na mesma noite.',
-    highlight: 'Sono reparador e alívio lombar imediato',
+      'Excelente profissional! Muito pontual, atenciosa e com um conhecimento anatômico impecável. Trabalho horas em frente ao computador e a liberação miofascial destravou minha coluna lombar por completo. Recomendo de olhos fechados.',
+    highlight: 'Coluna lombar totalmente destravada após meses de tensão',
     stars: 5,
+    source: 'Google Avaliações',
+    date: 'há 3 meses',
   },
   {
     id: 't3',
-    author: 'Patrícia Albuquerque',
-    role: 'Empresária',
-    location: 'Rio de Janeiro',
-    treatment: 'Protocolo Detox & Vitalidade',
+    author: 'Beatriz Vasconcellos',
+    role: 'Cliente Verificada',
+    location: 'Rio de Janeiro – RJ',
+    treatment: 'Sessão Sinergia: O Despertar das Raízes',
     quote:
-      'O cuidado e o respeito que a Luana transmite são raros. O ritual sensorial me fez desligar do ritmo caótico da cidade. Saí com o corpo desinchado, leve e com a energia completamente recarregada. Um verdadeiro refúgio no Rio.',
-    highlight: 'Sensação renovadora de leveza e clareza mental',
+      'Experiência sensacional no Espaço Zensorial com a Luana Lopes. O ambiente transmite uma paz incrível, a sinergia botânica é deliciosa e o atendimento é personalizado de verdade. Saí renovada física e mentalmente!',
+    highlight: 'Ambiente de paz absoluta e renovação completa',
     stars: 5,
+    source: 'Google Avaliações',
+    date: 'há 1 mês',
+  },
+  {
+    id: 't4',
+    author: 'Camila Ramos',
+    role: 'Cliente Verificada',
+    location: 'Rio de Janeiro – RJ',
+    treatment: 'Massoterapia & Protocolo Detox',
+    quote:
+      'A Luana tem mãos de fada e uma sensibilidade ímpar no diagnóstico das tensões. O cuidado integrativo com óleos puros e o banho detox devolveram a leveza nas pernas e a disposição que eu tinha perdido. Nota 1000!',
+    highlight: 'Sensibilidade ímpar e sensação revigorante de leveza',
+    stars: 5,
+    source: 'Google Avaliações',
+    date: 'há 4 meses',
   },
 ];
 
@@ -230,7 +243,7 @@ export const FAQS: FAQItem[] = [
     category: 'conceito',
     question: 'Por que o termo "interagente" é utilizado em vez de "paciente" ou "cliente"?',
     answer:
-      'O termo interagente reflete a horizontalidade e a autonomia da nossa prática: você não é um espectador passivo do seu tratamento, mas um participante ativo, consciente e soberano da sua própria jornada de saúde e reconexão corporal.',
+      'O termo interagente reflete a autonomia da nossa prática: você não é um espectador passivo do seu tratamento, mas um participante ativo, consciente e soberano da sua própria jornada de saúde e reconexão corporal.',
   },
   {
     id: 'faq-2',

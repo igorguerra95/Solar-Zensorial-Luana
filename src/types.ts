@@ -17,9 +17,9 @@ export interface Specialty {
 export interface MethodPhase {
   step: number;
   title: string;
-  subtitle: string;
+  subtitle?: string;
   description: string;
-  details: string[];
+  details?: string[];
   iconName: string;
 }
 
@@ -32,6 +32,8 @@ export interface Testimonial {
   treatment: string;
   highlight: string;
   stars: number;
+  date?: string;
+  source?: string;
 }
 
 export interface FAQItem {

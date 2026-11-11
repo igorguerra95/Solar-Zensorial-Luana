@@ -42,7 +42,7 @@ export const Specialties: React.FC<SpecialtiesProps> = ({ onSelectService }) => 
           </h2>
 
           <p className="text-base sm:text-lg text-[#A3B5AA] leading-relaxed">
-            Cada atendimento é desenhado sob medida: unimos manobras manuais de alta precisão a óleos vegetais puros e sinergias botânicas para devolver a leveza, o alívio e a consciência corporal.
+            Cada atendimento é desenhado sob medida: uno manobras manuais de alta precisão a óleos vegetais puros e sinergias botânicas para devolver a leveza, o alívio e a consciência corporal.
           </p>
         </div>
 
