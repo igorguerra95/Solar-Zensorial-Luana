@@ -28,12 +28,12 @@ export const AboutSection: React.FC = () => {
           {/* Left Column: Visual Profile & Credentials Card */}
           <div className="lg:col-span-5 space-y-6">
             <div className="relative rounded-3xl overflow-hidden bg-gradient-to-b from-[#1C2C23] to-[#142019] border border-[#D4AF37]/30 p-6 sm:p-8 shadow-2xl">
-              {/* Portrait Photo of Dra. Luana no Espaço Zensorial */}
+              {/* Portrait Photo of Luana no Espaço Zensorial */}
               <div className="relative rounded-2xl overflow-hidden border border-[#D4AF37]/30 mb-6 group shadow-lg">
                 <div className="w-full h-[360px] sm:h-[420px] md:h-[460px] min-h-[300px] overflow-hidden bg-[#121B16]">
                   <img
                     src={BRAND_INFO.photoConsultorio}
-                    alt="Dra. Luana Lopes no Espaço Zensorial"
+                    alt="Luana Lopes no Espaço Zensorial"
                     className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500 ease-out block"
                     loading="eager"
                     onError={(e) => {

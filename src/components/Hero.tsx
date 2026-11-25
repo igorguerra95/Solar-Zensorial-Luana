@@ -98,7 +98,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onExploreMethod }) =>
                 <div className="relative w-full h-[400px] sm:h-[480px] lg:h-[540px] min-h-[360px] overflow-hidden bg-[#16241D]">
                   <img
                     src={BRAND_INFO.photoClinical}
-                    alt="Dra. Luana Lopes — Massoterapeuta Integrativa"
+                    alt="Luana Lopes — Massoterapeuta Integrativa"
                     className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700 ease-out block"
                     loading="eager"
                     onError={(e) => {

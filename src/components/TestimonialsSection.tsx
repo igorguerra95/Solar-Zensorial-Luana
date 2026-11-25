@@ -18,7 +18,7 @@ export const TestimonialsSection: React.FC = () => {
           </h2>
 
           <p className="text-base sm:text-lg text-[#A3B5AA] leading-relaxed">
-            Avaliações 5 estrelas verificadas no Google Meu Negócio da Dra. Luana Lopes — Espaço Zensorial no Rio de Janeiro.
+            Avaliações 5 estrelas verificadas no Google Meu Negócio de Luana Lopes — Espaço Zensorial no Rio de Janeiro.
           </p>
 
           {/* Google Summary Badge */}
